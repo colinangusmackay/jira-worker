@@ -1,0 +1,8 @@
+@using JiraWorker.Services
+@using Microsoft.Extensions.Options
+@using JiraWorker.JiraApi
+
+@inject IUserService _userService
+@inject IOptions<JiraSettings> _settings
+
+<span>@UserName</span>
