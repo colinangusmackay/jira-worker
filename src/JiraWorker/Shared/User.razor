@@ -5,4 +5,7 @@
 @inject IUserService _userService
 @inject IOptions<JiraSettings> _settings
 
-<span>@UserName</span>
+<span class="user">
+    @UserName
+    <img class="image" src="@AvatarUrl" alt="Avatar of @UserName"/>
+</span>
